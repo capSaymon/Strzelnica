@@ -1,0 +1,115 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.8.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "328abc1"
+  },
+  "schemaVersion": 19,
+  "id": "personalData",
+  "components": [
+    {
+      "text": "# **Rejestracja na strzelnice**",
+      "type": "text",
+      "layout": {
+        "row": "Row_0buiogj",
+        "columns": null
+      },
+      "id": "Field_0w0dzff"
+    },
+    {
+      "label": "Name",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_00bkwmj",
+        "columns": null
+      },
+      "id": "Field_0vs93x5",
+      "key": "name",
+      "validate": {
+        "required": true,
+        "pattern": ""
+      }
+    },
+    {
+      "label": "Surname",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_00bkwmj",
+        "columns": null
+      },
+      "id": "Field_143ds1o",
+      "key": "surname",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Date",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0sf0vx8",
+        "columns": 3
+      },
+      "id": "Field_068ise3",
+      "key": "birthdate",
+      "validate": {
+        "required": true
+      },
+      "readonly": false,
+      "properties": {
+        "key1": "value"
+      }
+    },
+    {
+      "label": "Phone",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0sf0vx8",
+        "columns": 5
+      },
+      "id": "Field_1wiposm",
+      "key": "phone",
+      "validate": {
+        "validationType": "phone"
+      }
+    },
+    {
+      "label": "E-mail",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0sf0vx8",
+        "columns": 8
+      },
+      "id": "Field_0lye516",
+      "key": "email",
+      "validate": {
+        "required": true,
+        "validationType": "email"
+      }
+    },
+    {
+      "label": "Number gun license",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0xynnci",
+        "columns": null
+      },
+      "id": "Field_1872li5",
+      "key": "gunLicense",
+      "defaultValue": "False"
+    },
+    {
+      "label": "training certificate",
+      "type": "filepicker",
+      "layout": {
+        "row": "Row_0xynnci",
+        "columns": 4
+      },
+      "id": "Field_03lwjbn",
+      "key": "trainingCertificate"
+    }
+  ],
+  "type": "default"
+}
